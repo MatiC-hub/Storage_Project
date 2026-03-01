@@ -96,7 +96,7 @@ SELECT
   SUM(last_name IS NOT NULL) AS last_name_not_null,
   SUM(email_primary IS NOT NULL) AS email_primary_not_null,
   SUM(phone_primary IS NOT NULL) AS phone_primary_not_null
-FROM customers;
+FROM customers
 
 
 

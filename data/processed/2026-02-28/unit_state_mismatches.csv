@@ -1,0 +1,5 @@
+unit_number,unit_state,unit_rental_id,external_rental_id,rental_state,updated_at,move_in_date,move_out_date,snapshot_date,comment
+h8024,available,178,69248057485654a697f4c755,occupied,"2026-01-27 12:45:06",2025-09-04,2026-02-19,2026-02-28,"unit available but last rental still marked occupied (system timing)"
+bk3m4,available,67,692480077f9fef26202211d2,occupied,"2026-01-21 11:37:33",2025-01-21,NULL,2026-02-28,"unit available but last rental still marked occupied (system timing)"
+b2014,available,35,69247fef485654a697f40814,occupied,"2026-01-14 10:12:40",2025-06-03,NULL,2026-02-28,"unit available but last rental still marked occupied (system timing)"
+c3004,available,81,69248012485654a697f45960,occupied,"2026-01-09 11:20:36",2025-04-02,2026-02-03,2026-02-28,"unit available but last rental still marked occupied (system timing)"

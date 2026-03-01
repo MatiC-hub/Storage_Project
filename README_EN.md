@@ -340,6 +340,27 @@ The model is ready for:
 - Temporal evolution
 - Customer behavior analysis
 
+## Analytical Layer (SQL View for BI)
+
+Beyond the ETL pipeline in Python, an analytical SQL view (`analytics_rentals`) was created in MySQL.
+
+This view:
+- Enriches rental data with unit and customer information
+- Calculates rental duration dynamically
+- Flags active rentals
+- Identifies multi-unit customers
+- Computes total m² occupied per customer
+
+This view acts as a semantic layer for Tableau, allowing direct database connection instead of relying on exported CSV files.
+
+This architecture separates:
+- Raw data
+- Cleaned data
+- Analytical layer
+- Visualization layer
+
+It reflects a production-oriented data workflow.
+
 Next step:
 
 - Tableau dashboard development
@@ -367,3 +388,6 @@ Next step:
 ✔ Data quality validated  
 ✔ Referential integrity confirmed  
 ✔ Ready for analytics phase  
+
+Phase 1: Operational & occupancy analysis
+Phase 2: Financial and revenue optimization analysis

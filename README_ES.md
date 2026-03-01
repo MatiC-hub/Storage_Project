@@ -301,6 +301,27 @@ El modelo está preparado para:
 - Evolución temporal
 - Comportamiento de clientes recurrentes
 
+## Capa Analítica (Vista SQL para BI)
+
+Además del pipeline ETL en Python, se creó una vista analítica en MySQL (`analytics_rentals`).
+
+Esta vista:
+- Enriquece los datos de alquiler con información de unidades y clientes
+- Calcula dinámicamente la duración del alquiler
+- Identifica alquileres activos
+- Detecta clientes con múltiples unidades
+- Calcula los m² totales ocupados por cliente
+
+Esta vista funciona como capa semántica para Tableau, permitiendo conexión directa a la base de datos en lugar de trabajar únicamente con CSV.
+
+La arquitectura separa:
+- Datos raw
+- Datos procesados
+- Capa analítica
+- Capa de visualización
+
+Refleja un flujo de trabajo orientado a entorno profesional.
+
 Próximo paso:
 
 - Construcción de dashboards en Tableau / Power BI
@@ -328,3 +349,7 @@ Próximo paso:
 ✔ Calidad de datos validada  
 ✔ Integridad referencial comprobada  
 ✔ Listo para fase analítica  
+
+
+Phase 1: Operational & occupancy analysis
+Phase 2: Financial and revenue optimization analysis

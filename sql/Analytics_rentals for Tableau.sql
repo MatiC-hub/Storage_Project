@@ -61,3 +61,10 @@ LIMIT 10;
 SELECT COUNT(*) FROM analytics_rentals;
 
 SELECT * FROM analytics_rentals LIMIT 5;
+
+SELECT COUNT(*) AS n FROM analytics_rentals;
+
+SELECT 
+    COUNT(*) AS total_rentals,
+    SUM(unit_id IS NULL) AS rentals_without_unit
+FROM unit_rentals;

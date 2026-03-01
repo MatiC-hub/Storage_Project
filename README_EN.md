@@ -1,4 +1,6 @@
-# 🗄️ Personal Project – Self-Storage Database
+# 🗄️ Personal Project – Storage Facility Analytical System
+
+---
 
 ## 🎯 Project Objective
 
@@ -8,170 +10,360 @@ This project has a dual purpose:
 
 Final project of a Data Analytics bootcamp aimed at:
 
-- Designing a complete relational database from scratch.
-- Building a reproducible ETL pipeline in Python.
-- Applying data modeling, integrity, and governance best practices.
-- Delivering a professional end-to-end analytics project.
+- Designing a complete relational model from scratch.
+- Implementing a reproducible ETL pipeline in Python.
+- Applying best practices in data modeling, integrity, and governance.
+- Building a professional end-to-end portfolio project.
 
-### 2️⃣ Professional (Real Business Context)
+### 2️⃣ Professional (Real Business Case)
 
-The project is based on a real self-storage business environment.
+Project developed in collaboration with, "Securistore Self-Storage", a real storage rental company.
 
-The database is designed to be structured, maintainable, and scalable, supporting questions such as:
+A clean, maintainable, and scalable database was designed to answer questions such as:
 
-- Customer distribution by country.
-- Minimum, average, and maximum length of stay.
+- Geographic distribution of customers.
+- Minimum, average, and maximum rental duration.
 - Current occupancy and temporal evolution.
-- Active vs recently ended customer behavior.
+- Average vacancy time per unit.
+- Segmentation of active vs. completed customers.
 
 ⚠️ **Privacy Note:**  
-All datasets published in this repository are synthetic.  
-Real business data is processed locally only.
+The data published in this repository is synthetic.  
+Real operational data is processed only in a private local environment.
 
 ---
 
-## 🏗️ Project Architecture
+# 🏗 Project Architecture
 
-### 📂 Repository Structure
+The project follows a **batch-based ETL architecture using daily snapshots**, prioritizing:
+
+- Traceability  
+- Reproducibility  
+- Cross-table consistency  
+- Historical auditability  
+
+---
+
+## 🔄 General Flow
+
+### 1️⃣ Extract
+- CSV exports from the operational system.
+- Organized by date:
+    data/raw/YYYY-MM-DD/
+
+
+---
+
+### 2️⃣ Transform
+Independent scripts per entity:
+
+- `etl_units.py`
+- `etl_customers.py`
+- `etl_rentals.py`
+
+Includes:
+
+- Data cleaning
+- State normalization
+- Geographic standardization
+- Structural validation
+- Referential integrity checks
+- Inconsistency reporting
+
+---
+
+### 3️⃣ Load
+- Insert / Upsert using `INSERT ... ON DUPLICATE KEY UPDATE`
+- Referential integrity validation after load
+- Foreign keys based on `external_*_id`
+
+---
+
+### 4️⃣ Analytical Layer
+- Consolidated MySQL relational database
+- SQL validation queries
+- Prepared for BI tools (Tableau / Power BI)
+
+---
+
+# 📂 Repository Structure
+
+
+---
+
+### 2️⃣ Transform
+Independent scripts per entity:
+
+- `etl_units.py`
+- `etl_customers.py`
+- `etl_rentals.py`
+
+Includes:
+
+- Data cleaning
+- State normalization
+- Geographic standardization
+- Structural validation
+- Referential integrity checks
+- Inconsistency reporting
+
+---
+
+### 3️⃣ Load
+- Insert / Upsert using `INSERT ... ON DUPLICATE KEY UPDATE`
+- Referential integrity validation after load
+- Foreign keys based on `external_*_id`
+
+---
+
+### 4️⃣ Analytical Layer
+- Consolidated MySQL relational database
+- SQL validation queries
+- Prepared for BI tools (Tableau / Power BI)
+
+---
+
+# 📂 Repository Structure
 
 00_STORAGE_PROJECT/
 │
 ├── data/
-│   ├── raw/
-│   │   ├── 2026-01-27/
-│   │   │   ├── rentals.csv
-│   │   │   ├── types.csv
-│   │   │   └── units.csv
-│   │   │
-│   │   └── 2026-02-25/
-│   │       ├── owners_customers.csv
-│   │       └── rentals.csv
-│   │
-│   ├── processed/
-│   │   ├── 2026-01-27/
-│   │   │   └── units_clean.csv
-│   │   │
-│   │   └── 2026-02-25/
-│   │       ├── customers_clean.csv
-│   │       ├── rentals_clean.csv
-│   │       └── pending_country_review.csv
-│   │
-│   └── reference/
-│       ├── countries.csv
-│       ├── spanish_provinces.csv
-│       └── city_aliases.csv
+│ ├── raw/
+│ │ ├── 2026-01-27/
+│ │ │ ├── rentals.csv
+│ │ │ ├── types.csv
+│ │ │ └── units.csv
+│ │ │
+│ │ ├── 2026-02-25/
+│ │ │ ├── owners_customers.csv
+│ │ │ └── rentals.csv
+│ │ │
+│ │ └── 2026-02-28/
+│ │ ├── owners_customers.csv
+│ │ ├── rentals.csv
+│ │ └── units.csv
+│ │
+│ ├── processed/
+│ │ ├── 2026-01-27/
+│ │ │ └── units_clean.csv
+│ │ │
+│ │ ├── 2026-02-25/
+│ │ │ ├── customers_clean.csv
+│ │ │ ├── rentals_clean.csv
+│ │ │ └── pending_country_review.csv
+│ │ │
+│ │ └── 2026-02-28/
+│ │ ├── customers_clean.csv
+│ │ ├── rentals_clean.csv
+│ │ ├── units_clean.csv
+│ │ ├── pending_country_review.csv
+│ │ └── unit_state_mismatches.csv
+│ │
+│ ├── manual/
+│ │ ├── 2026-02-25/
+│ │ │ ├── monthly_customer.csv
+│ │ │ └── monthly_rentals.csv
+│ │ └── 2026-02-28/
+│ │ ├── monthly_customer.csv
+│ │ └── monthly_rentals.csv
+│ │
+│ └── reference/
+│ ├── city_aliases.csv
+│ ├── countries.csv
+│ └── spanish_provinces.csv
 │
 ├── images/
-│   └── data_model.png
+│ └── data_model.png
 │
 ├── sql/
-│   ├── Diagram.mwb
-│   └── Revisiones.sql
+│ ├── Diagram.mwb
+│ ├── 2026-02-28 Queries.sql
+│ ├── Checks_01_03_2026.sql
+│ ├── Data_Quality_Checklist_Snapshot_2026-02-28.sql
+│ ├── Monthly_check.sql
+│ ├── Unit_rentals_checks.sql
+│ └── Revisiones.sql
 │
 ├── src/
-│   ├── etl_customers.py
-│   ├── etl_rentals.py
-│   └── etl_units.py
+│ ├── etl_units.py
+│ ├── etl_customers.py
+│ └── etl_rentals.py
 │
-├── .env                # Not committed (credentials)
+├── notebooks/
+├── .env
 ├── .gitignore
 ├── README_ES.md
 └── README_EN.md
 
-## 🗄️ Data Model
+
+---
+
+# 🗄 Data Model
 
 Database: `storage_project`
 
-Main tables:
+### Implemented Core Tables
 
 - `customers`
 - `units`
-- `rentals`
+- `unit_rentals`
+
+---
+
+### Entity-Relationship Diagram
+
+![Data Model](images/data_model.png)
+
+EER diagram designed in MySQL Workbench.  
+Source file available at: `sql/Diagram.mwb`
+
+---
+
+## 🧠 Architectural Decisions
+
+During early modeling, additional aggregation tables were considered:
+
 - `bulk_areas`
 - `bulk_occupancies`
 
-Clear separation between:
+After analyzing the operational system structure, it was determined that:
 
-- Core entities (customers, physical storage)
-- Temporal events (rentals, occupancies)
+- All required information was already represented in:
+  - `units`
+  - `unit_rentals`
 
-The ER diagram was generated using MySQL Workbench.
+These tables were discarded to avoid:
+
+- Redundancy
+- Unnecessary complexity
+- Risk of inconsistencies
+
+The final model prioritizes:
+
+- Normalization
+- Clear foreign key relationships
+- Strict referential integrity
 
 ---
 
-## 🔄 ETL Process
+# 🔄 ETL Process
 
-The ETL pipeline is implemented in Python and designed to be idempotent.
+The ETL pipeline is idempotent and fully re-executable.
 
 ### Extract
-- Read CSV exports from the external management system.
-- Organize data by snapshot date.
+- Reads dated snapshot exports.
 
 ### Transform
-- Column harmonization.
-- Type normalization.
-- Duplicate removal.
-- Invalid value cleaning.
-- Geographic standardization using:
-  - `countries.csv`
-  - `spanish_provinces.csv`
-  - `city_aliases.csv`
-- Automatic country assignment (`Spain`) when province matches official Spanish provinces.
-- Export of records requiring manual review (`pending_country_review.csv`).
+- Cleaning and type casting
+- Duplicate removal
+- Geographic normalization
+- Automatic inference of `country = Spain` when province is Spanish
+- Export of inconsistency reports:
+  - `pending_country_review.csv`
+  - `unit_state_mismatches.csv`
 
 ### Load
-- Insert/Upsert into MySQL using `INSERT ... ON DUPLICATE KEY UPDATE`.
-- Post-load integrity checks.
+- UPSERT into MySQL
+- Post-load SQL validation checks
 
 ---
 
-## 🧹 Data Governance & Quality
+# 🛡 Data Quality & Known Limitations
 
-The project includes:
+## 1️⃣ Snapshot Consistency
 
-- Full removal of personal identifiable information (PII) in the public repository.
-- Referential integrity checks.
-- Controlled NULL reduction.
-- Snapshot versioning for reproducibility and historical comparison.
+The ETL must be executed in this order:
 
----
+1. `etl_units.py`
+2. `etl_customers.py`
+3. `etl_rentals.py`
 
-## 📊 Snapshots
-
-Each ETL execution generates:
-
-data/processed/<snapshot_date>/
-customers_clean.csv
-rentals_clean.csv
-units_clean.csv
-pending_country_review.csv
-
-
-This enables:
-
-- Reproducibility.
-- Temporal comparisons.
-- Evolution analysis.
+Partial execution may temporarily generate cross-table inconsistencies.
 
 ---
 
-## 🛠️ Tech Stack
+## 2️⃣ Monthly Customers
+
+In the operational system:
+
+- Monthly units are marked as `blocked`.
+
+In the analytical model:
+
+- They are treated as `occupied`.
+
+As of snapshot `2026-02-28`:
+
+- 12 monthly units
+- 1 additional blocked unit used for testing
+
+---
+
+## 3️⃣ Unit State vs Rental State Mismatches (4 cases)
+
+Some units are marked as `available` while their latest rental still shows `occupied`.
+
+Documented in:
+  data/processed/2026-02-28/unit_state_mismatches.csv
+
+
+No artificial corrections were applied in order to preserve source system integrity.
+
+---
+
+## 4️⃣ Missing Customer Location Data
+
+Two active monthly customers are missing `city` and `province`.
+
+- Data was not provided by clients.
+- Values intentionally preserved as `NULL`.
+
+---
+
+# 🧹 Data Governance
+
+- Complete removal of PII from public repository
+- Versioned snapshots
+- Referential integrity validation
+- Documented inconsistencies
+- Fully reproducible model
+
+---
+
+# 📊 Next Phase: Analytics & Visualization
+
+The model is ready for:
+
+- Occupancy analysis
+- Vacancy time analysis
+- Geographic segmentation
+- Temporal evolution
+- Customer behavior analysis
+
+Next step:
+
+- Tableau dashboard development
+- Corporate visual identity integration
+
+---
+
+# 🛠 Tech Stack
 
 - MySQL
 - Python
 - pandas
 - SQLAlchemy
 - python-dotenv
-- Power BI (next phase)
-- Tableau (next phase)
+- Tableau (analytical phase)
+- Power BI (optional)
 
 ---
 
-## 🚀 Current Status
+# 🚀 Current Status
 
-- Relational model implemented.
-- Customers, rentals, and units ETLs operational.
-- Snapshot automation completed.
-- Geographic standardization implemented.
-- Database validated (no PII).
-- Ready for analytical phase.
+✔ Relational model implemented  
+✔ ETL fully operational  
+✔ Snapshot automation  
+✔ Data quality validated  
+✔ Referential integrity confirmed  
+✔ Ready for analytics phase  

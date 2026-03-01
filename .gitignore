@@ -1,0 +1,14 @@
+# Never upload real data
+data/private/
+**/*current*
+**/*old*
+
+# Credentials / secrets
+.env
+*.pem
+*.key
+
+# Python
+__pycache__/
+.ipynb_checkpoints/
+.venv/

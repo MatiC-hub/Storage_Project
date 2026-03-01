@@ -1,0 +1,206 @@
+owner.id,owner.language,owner.customFields.business,owner.customFields.city,owner.customFields.country,owner.customFields.insurance,owner.customFields.isCompany,owner.customFields.nac,owner.customFields.province,owner.created,owner.updated
+692ff7b03cc1e80cdbdd7f09,en,,Collioure,France,,,French,Côte Vermeille,2025-12-03 09:41:20,2026-02-26 12:48:03
+699ece77bb6770d52ec69530,en,,Parcent,España,,,British,Alicante,2026-02-25 11:27:03,2026-02-27 12:46:58
+69247e85485654a697f0bb3f,es,,Pedreguer,España,SIN SEGURO ADICIONAL,,Spanish,Alicante,2025-11-24 16:49:25,2026-02-26 09:37:07
+69247e6d7f9fef26201d9d3c,en,,Jávea,España,SIN SEGURO ADICIONAL,,British,Alicante,2025-11-24 16:49:01,2026-02-26 10:05:24
+69247e807f9fef26201df12c,en,,Denia,España,SIN SEGURO ADICIONAL,,German,Alicante,2025-11-24 16:49:20,2026-02-26 09:38:37
+69247e747f9fef26201dba1b,en,,Jávea,España,SIN SEGURO ADICIONAL,,British,Alicante,2025-11-24 16:49:08,2026-02-26 10:06:07
+69247e73485654a697f060cb,en,,London,United Kingdom,Seguro Incluido,,British,Surrey,2025-11-24 16:49:07,2026-02-26 10:08:21
+69247e7e485654a697f0b1d9,en,,Jávea,España,Seguro Incluido,,British,Alicante,2025-11-24 16:49:18,2026-02-26 10:08:50
+69247e7a485654a697f0a7c0,en,,Denia,España,Seguro Incluido,,German,Alicante,2025-11-24 16:49:14,2026-02-26 09:43:15
+69413b641f8ba958b9e42836,es,,Ondara,España,,,Spanish,Alicante,2025-12-16 11:58:44,2026-02-26 09:43:57
+69247e817f9fef26201df28c,en,,Crowborough,United Kingdom,,,British,East Sussex,2025-11-24 16:49:21,2026-02-26 09:45:11
+69247e757f9fef26201dbacd,es,,La Jara,España,Seguro Incluido,,Spanish,Alicante,2025-11-24 16:49:09,2026-02-26 10:11:31
+69247e83485654a697f0b987,es,,Denia,España,SIN SEGURO ADICIONAL,,Spanish,Alicante,2025-11-24 16:49:23,2026-02-27 12:23:25
+69247e787f9fef26201dbf04,en,,Denia,España,Seguro Incluido,,British,Alicante,2025-11-24 16:49:12,2026-02-26 09:47:59
+69247e7d485654a697f0b181,en,,Witterswil,Suiza,Seguro Incluido,,Swiss,Soleura,2025-11-24 16:49:17,2026-02-26 09:50:25
+69247e687f9fef26201d953c,es,,Madrid,España,SIN SEGURO ADICIONAL,,Spanish,Madrid,2025-11-24 16:48:56,2026-02-26 09:51:11
+69247e767f9fef26201dbc1d,en,,Moraira,España,Seguro Incluido,true,Spanish,Alicante,2025-11-24 16:49:10,2026-02-26 09:51:36
+69247e677f9fef26201d90b0,en,,Jávea,España,Seguro Incluido,,Belgian,Alicante,2025-11-24 16:48:55,2026-02-26 10:14:02
+69247e87485654a697f0beaf,es,,Denia,España,Seguro Incluido,,French,Alicante,2025-11-24 16:49:27,2026-02-26 09:54:49
+69247e6e485654a697f04b8c,en,,Moraira,España,,,British,Alicante,2025-11-24 16:49:02,2026-02-26 09:55:12
+69247e87485654a697f0be57,en,,Ashford,United Kingdom,Seguro Incluido,,British,Middlesex,2025-11-24 16:49:27,2026-02-26 09:55:38
+69247e82485654a697f0b8d7,en,,Jávea,España,Seguro Incluido,,British,Alicante,2025-11-24 16:49:22,2026-02-26 10:17:38
+69247e76485654a697f06480,en,,Jalón,España,SIN SEGURO ADICIONAL,,Algerian,Alicante,2025-11-24 16:49:10,2026-02-26 09:56:33
+69247e62485654a697f01c77,en,,Llosa de Camacho,España,Seguro Incluido,,Dutch,Alicante,2025-11-24 16:48:50,2026-02-26 09:57:07
+69247e7c7f9fef26201de904,en,,Pedreguer ,España,,,British,Alicante,2025-11-24 16:49:16,2026-02-26 09:57:36
+69247e747f9fef26201db9c3,en,,Rafol d' Almunia,España,SIN SEGURO ADICIONAL,,British,Alicante,2025-11-24 16:49:08,2026-02-26 09:58:11
+69247e7f485654a697f0b6e6,en,,Jávea,España,Seguro Incluido,,British,Alicante,2025-11-24 16:49:19,2026-02-26 10:21:32
+69247e857f9fef26201dfafb,en,,Pedreguer,España,Seguro Incluido,,German,Alicante,2025-11-24 16:49:25,2026-02-26 09:59:12
+69247e65485654a697f01ff6,en,,Ondara,España,,,Irish,Alicante,2025-11-24 16:48:53,2026-02-26 09:59:35
+69247e807f9fef26201df0d4,es,,Jávea,España,,,Spanish,Alicante,2025-11-24 16:49:20,2026-02-26 10:23:46
+69247e6f485654a697f05006,en,,Ondara,España,Seguro Incluido,,Swiss,Alicante,2025-11-24 16:49:03,2026-02-26 10:00:34
+69247e707f9fef26201db663,en,,Jávea,España,Seguro Incluido,,British,Alicante,2025-11-24 16:49:04,2026-02-26 11:10:47
+69247e7f485654a697f0b6e6,en,,Jávea,España,Seguro Incluido,,British,Alicante,2025-11-24 16:49:19,2026-02-26 10:21:32
+69247e757f9fef26201dbacd,es,,La Jara,España,Seguro Incluido,,Spanish,Alicante,2025-11-24 16:49:09,2026-02-26 10:11:31
+69247e7e485654a697f0b231,es,,Jávea,España,Seguro Incluido,,Spanish,Alicante,2025-11-24 16:49:18,2026-02-26 11:14:53
+69247e607f9fef26201d84b5,en,,Denia,España,SIN SEGURO ADICIONAL,,British,Alicante,2025-11-24 16:48:48,2026-02-27 11:07:04
+69247e697f9fef26201d9998,en,,Jávea,España,,,Dutch,Alicante,2025-11-24 16:48:57,2026-02-26 11:16:19
+69247e7e7f9fef26201deb04,es,,Castelldefels,España,,,Spanish,Barcelona,2025-11-24 16:49:18,2026-02-26 11:22:02
+69247e787f9fef26201dbf04,en,,Denia,España,Seguro Incluido,,British,Alicante,2025-11-24 16:49:12,2026-02-26 09:47:59
+69247e5f485654a697f01528,es,,Jávea,España,Seguro Incluido,,Spanish,Alicante,2025-11-24 16:48:47,2026-02-26 11:28:40
+692420a57f9fef26200a4ead,es,,Denia,España,,,Spanish,Alicante,2025-11-24 10:08:53,2026-02-18 13:29:45
+69247e717f9fef26201db76b,en,,Montrouge,France,SIN SEGURO ADICIONAL,,French,Hauts-de-Seine,2025-11-24 16:49:05,2026-02-26 11:30:45
+69247e637f9fef26201d888c,en,,Les Baux de Provenci,Francia,SIN SEGURO ADICIONAL,,French,Bouches-du-Rhône,2025-11-24 16:48:51,2026-02-26 11:34:36
+691f0bab3c2ab6a319d2fd5f,en,, RA ENSCHEDE,The Netherlands,INC,,Dutch,Overijssel,2025-11-20 13:38:03,2026-02-26 11:36:20
+69247e647f9fef26201d8a44,en,,Jávea,España,SIN SEGURO ADICIONAL,,Danish,Alicante,2025-11-24 16:48:52,2026-02-26 11:37:03
+69a01852667878f06d8c8862,en,,Oliva,España,,,Spanish,Valencia,2026-02-26 10:54:26,2026-02-26 11:03:53
+69247e73485654a697f06124,es,,Pedreguer,España,Seguro Incluido,,Spanish,Alicante,2025-11-24 16:49:07,2026-02-26 11:37:45
+69247e797f9fef26201de66e,en,,Staverton,United Kingdom,SIN SEGURO ADICIONAL,,British,Totnes,2025-11-24 16:49:13,2026-02-26 11:38:25
+69247e657f9fef26201d8e00,en,,Denia,España,,,Swiss,Alicante,2025-11-24 16:48:53,2026-02-26 11:38:42
+69247e7e485654a697f0b68e,en,,Jávea,España,Seguro Incluido,,British,Alicante,2025-11-24 16:49:18,2026-02-26 11:39:31
+69247e627f9fef26201d873f,en,,Nottingham,United Kingdom,SIN SEGURO ADICIONAL,,British,Nottinghamshire,2025-11-24 16:48:50,2026-02-26 11:40:56
+69247e667f9fef26201d8ef8,en,,Jávea,España,Seguro Incluido,,British,Alicante,2025-11-24 16:48:54,2026-02-26 11:41:23
+69247e767f9fef26201dbb7d,en,,Turriff,United Kingdrom,Seguro Incluido,,Scottish,Aberdeenshire,2025-11-24 16:49:10,2026-02-26 13:01:20
+69247e767f9fef26201dbb7d,en,,Turriff,United Kingdrom,Seguro Incluido,,Scottish,Aberdeenshire,2025-11-24 16:49:10,2026-02-26 13:01:20
+696608492d76753bcff92fff,es,,Jávea,España,,true,Spanish,Alicante,2026-01-13 09:54:33,2026-02-27 12:51:32
+69247e7d7f9fef26201dea0c,en,,Denia,España,Seguro Incluido,,American,Alicante,2025-11-24 16:49:17,2026-02-26 11:43:57
+69247e6a7f9fef26201d9a48,en,,Denia,,Seguro Incluido,,British,Alicante,2025-11-24 16:48:58,2026-02-19 11:41:37
+69247e767f9fef26201dbb7d,en,,Turriff,United Kingdrom,Seguro Incluido,,Scottish,Aberdeenshire,2025-11-24 16:49:10,2026-02-26 13:01:20
+69247e66485654a697f0288f,en,,Els Poblets,España,Seguro Incluido,,American,Alicante,2025-11-24 16:48:54,2026-02-26 11:45:10
+69247e817f9fef26201df234,es,,Madrid,España,Seguro Incluido,,Spanish,Madrid,2025-11-24 16:49:21,2026-02-26 11:46:02
+69247e647f9fef26201d8a44,en,,Jávea,España,SIN SEGURO ADICIONAL,,Danish,Alicante,2025-11-24 16:48:52,2026-02-26 11:37:03
+69247e86485654a697f0bc9f,en,,Jávea,España,,,British,Alicante,2025-11-24 16:49:26,2026-02-26 11:46:45
+69247e68485654a697f02b94,en,,Denia,,Seguro Incluido,,Dutch,Alicante,2025-11-24 16:48:56,2026-02-19 11:47:58
+69247e77485654a697f068ff,en,,Jávea,España,Seguro Incluido,,American,Alicante,2025-11-24 16:49:11,2026-02-26 11:48:13
+69247e877f9fef26201dfbab,en,,Benitachell,España,SIN SEGURO ADICIONAL,,British,Alicante,2025-11-24 16:49:27,2026-02-26 13:12:01
+69247e7a485654a697f0a8c8,es,,Jávea,España,Seguro Incluido,,Spanish,Alicante,2025-11-24 16:49:14,2026-02-26 11:49:45
+698331f12c998ea0c7fcbdf5,en,,Denia,España,,,British,Alicante,2026-02-04 12:48:01,2026-02-26 11:50:17
+69247e6f485654a697f04be6,en,,Jávea,España,SIN SEGURO ADICIONAL,,Danish,Alicante,2025-11-24 16:49:03,2026-02-26 11:52:04
+69247e5e7f9fef26201d8124,es,,Ondara,España,,,Spanish,Alicante,2025-11-24 16:48:46,2026-02-26 11:52:47
+69247e75485654a697f062cc,es,,Denia,,,,Spanish,Alicante,2025-11-24 16:49:09,2026-02-19 11:56:03
+695ba52d6a0e53697ea8c501,en,,Pedreguer,España,,,British,Alicante,2026-01-05 12:49:01,2026-02-27 09:41:00
+69247e80485654a697f0b7ce,es,,Hondercange,Bélgica,Seguro Incluido,,Belgian,Limburgo,2025-11-24 16:49:20,2026-02-26 11:56:58
+69247e787f9fef26201dc37b,es,,Moraira,,Seguro Incluido,,Spanish,Alicante,2025-11-24 16:49:12,2026-02-19 12:00:27
+69247e807f9fef26201df184,es,,El Verger,España,Seguro Incluido,,Spanish,Alicante,2025-11-24 16:49:20,2026-02-26 11:58:23
+69247e6d485654a697f04508,en,,Jávea,España,Seguro Incluido,,British,Alicante,2025-11-24 16:49:01,2026-02-26 11:59:10
+69247e6b485654a697f03c59,en,,Langford Beds,United Kingdom,,,British,Bedfordshire,2025-11-24 16:48:59,2026-02-26 12:01:00
+69247e83485654a697f0b92f,en,,Moraira,España,Seguro Incluido,,British,Alicante,2025-11-24 16:49:23,2026-02-26 12:01:48
+69247e7b7f9fef26201de7fc,en,,Denia,España,Seguro Incluido,,British,Alicante,2025-11-24 16:49:15,2026-02-26 12:02:42
+69247e86485654a697f0bda7,en,,Jávea,España,,,British,Alicante,2025-11-24 16:49:26,2026-02-26 12:03:37
+69600e1b9c182d033602798e,en,,Benissa,España,,,British,Alicante,2026-01-08 21:05:47,2026-02-26 12:04:28
+69247e7b7f9fef26201de764,en,,Jalón,España,,,British,Alicante,2025-11-24 16:49:15,2026-02-26 12:05:19
+69247e7f7f9fef26201defd0,es,,Denia,España,Seguro Incluido,,Spanish,Alicante,2025-11-24 16:49:19,2026-02-26 12:06:36
+69247e7d7f9fef26201de9b4,es,,Orba,España,Seguro Incluido,,Spanish,Alicante,2025-11-24 16:49:17,2026-02-26 12:09:14
+69247e6f485654a697f05006,en,,Ondara,España,Seguro Incluido,,Swiss,Alicante,2025-11-24 16:49:03,2026-02-26 10:00:34
+69247e67485654a697f0293e,en,,Denia,España,,,Russian,Alicante,2025-11-24 16:48:55,2026-02-26 12:10:32
+69247e71485654a697f05f6b,en,,Pont Pierre,Luxemburgo,SIN SEGURO ADICIONAL,,Dutch,Mondercange,2025-11-24 16:49:05,2026-02-26 13:01:20
+69247e72485654a697f0601b,en,,Altea,España,,,Dutch,Alicante,2025-11-24 16:49:06,2026-02-26 12:14:32
+69247e717f9fef26201db6bb,es,,Jávea,España,SIN SEGURO ADICIONAL,,Spanish,Benitachell,2025-11-24 16:49:05,2026-02-26 12:28:12
+69247e6f7f9fef26201da875,es,,Pego,España,Seguro Incluido,,Spanish,'03730,2025-11-24 16:49:03,2026-02-26 12:28:38
+696608492d76753bcff92fff,es,,Jávea,España,,true,Spanish,Alicante,2026-01-13 09:54:33,2026-02-27 12:51:32
+69247e6c485654a697f03d09,es,,Denia,España,Seguro Incluido,,Spanish,Alicante,2025-11-24 16:49:00,2026-02-26 09:42:38
+69247e5e7f9fef26201d81e0,es,,Pedreguer,España,Seguro Incluido,,Spanish,Alicante,2025-11-24 16:48:46,2026-02-26 12:29:15
+69247e6c485654a697f03d09,es,,Denia,España,Seguro Incluido,,Spanish,Alicante,2025-11-24 16:49:00,2026-02-26 09:42:38
+69247e62485654a697f01df5,es,,Teulada,España,Seguro Incluido,,Spanish,Alicante,2025-11-24 16:48:50,2026-02-26 12:29:42
+69247e837f9fef26201df48c,en,,Denia,España,Seguro Incluido,,British,ALicante,2025-11-24 16:49:23,2026-02-26 12:30:09
+69247e71485654a697f05fc3,es,,Vichayito,Perú,SIN SEGURO ADICIONAL,,Peruvian,Talara,2025-11-24 16:49:05,2026-02-26 12:33:30
+693699f6bf1a8a912ccbe544,en,,Brighton,United Kingdom,,,British,East Sussex,2025-12-08 10:27:18,2026-02-26 12:35:06
+693699f6bf1a8a912ccbe544,en,,Brighton,United Kingdom,,,British,East Sussex,2025-12-08 10:27:18,2026-02-26 12:35:06
+69247e85485654a697f0bc47,es,,Valencia,España,SIN SEGURO ADICIONAL,true,Spanish,Valencia,2025-11-24 16:49:25,2026-02-26 12:36:18
+69247e60485654a697f018d5,es,,El Verger,España,Seguro Incluido,,Spanish,Alicante,2025-11-24 16:48:48,2026-02-26 12:36:53
+69247e6c7f9fef26201d9bf0,es,,Els Poblets,España,Seguro Incluido,,Spanish,Alicante,2025-11-24 16:49:00,2026-02-26 12:37:27
+69247e7d7f9fef26201dea64,es,,Moraira,España,Seguro Incluido,,Spanish,Alicante,2025-11-24 16:49:17,2026-02-26 12:37:52
+69247e6b485654a697f03ac2,es,,Denia,España,Seguro Incluido,,Spanish,Alicante,2025-11-24 16:48:59,2026-02-26 12:38:12
+69600e1b9c182d033602798e,en,,Benissa,España,,,British,Alicante,2026-01-08 21:05:47,2026-02-26 12:04:28
+69247e7c7f9fef26201de854,es,,Benimeli,España,Seguro Incluido,,Spanish,Alicante,2025-11-24 16:49:16,2026-02-26 12:39:12
+69247e6b485654a697f03b1a,en,,Sitio de Calahonda,España,SIN SEGURO ADICIONAL,,American,Málaga,2025-11-24 16:48:59,2026-02-26 12:40:23
+69247e797f9fef26201dceb5,es,,Ondara,España,Seguro Incluido,,Spanish,Alicante,2025-11-24 16:49:13,2026-02-26 12:41:42
+69247e6e7f9fef26201d9e8c,en,,Alcalalí,España,Seguro Incluido,,British,Alicante,2025-11-24 16:49:02,2026-02-26 12:42:13
+69247e85485654a697f0bbef,en,,Jávea,España,SIN SEGURO ADICIONAL,,Dutch,Alicante,2025-11-24 16:49:25,2026-02-26 12:42:46
+69247e797f9fef26201dd056,es,,Denia,España,Seguro Incluido,,Spanish,Alicante,2025-11-24 16:49:13,2026-02-27 09:34:37
+69247e7b485654a697f0b031,en,,Denia,,Seguro Incluido,,Russian,Alicante,2025-11-24 16:49:15,2026-02-20 11:43:24
+6978ac497d4c548dd3d1156f,en,,Denia,España,,,American,Alicante,2026-01-27 13:15:05,2026-02-20 11:44:15
+69247e837f9fef26201df4e4,es,,Denia,España,SIN SEGURO ADICIONAL,,Spanish,Alicante,2025-11-24 16:49:23,2026-02-26 12:44:05
+69600e1b9c182d033602798e,en,,Benissa,España,,,British,Alicante,2026-01-08 21:05:47,2026-02-26 12:04:28
+69957cec3b4e63f9b21f7c5b,en,,Denia,España,,,Canadian,Alicante,2026-02-18 09:48:44,2026-02-26 12:44:51
+69247e84485654a697f0bae7,es,,Oliva,España,SIN SEGURO ADICIONAL,,Argentine,Valencia,2025-11-24 16:49:24,2026-02-26 12:46:00
+6944323b25cf6ec9b8820a68,es,,Ondara,España,,,Spanish,Alicante,2025-12-18 17:56:27,2026-02-26 12:46:31
+692ff7b03cc1e80cdbdd7f09,en,,Collioure,France,,,French,Côte Vermeille,2025-12-03 09:41:20,2026-02-26 12:48:03
+69395099d55506d185c94417,en,,Orba,España,,,German,Alicante,2025-12-10 11:51:05,2026-02-26 12:48:39
+69728de8d0079889a59dfa21,en,,Liptadt,Alemania,,,German,Liptadt,2026-01-22 21:51:52,2026-02-20 12:20:40
+69494ef32579c403d355986c,en,,Denia,España,,,Dutch,Alicante,2025-12-22 15:00:19,2026-02-26 12:50:36
+69a01017457154ce40250e50,en,,Gelderland,Holanda,,,Dutch,Gelderland,2026-02-26 10:19:19,2026-02-26 12:52:46
+69247e78485654a697f06a37,es,,Denia,España,SIN SEGURO ADICIONAL,,Spanish,Alicante,2025-11-24 16:49:12,2026-02-26 12:54:01
+6990002e5d33fb4962aea3d0,en,,Ventura,United States,,,American,CA,2026-02-14 05:55:10,2026-02-20 12:27:43
+69247e78485654a697f069df,en,,Boadilla del Monte,España,SIN SEGURO ADICIONAL,,Spanish,Madrid,2025-11-24 16:49:12,2026-02-26 12:55:13
+69247e68485654a697f02c34,en,,El Verger,España,SIN SEGURO ADICIONAL,,French,Alicante,2025-11-24 16:48:56,2026-02-26 12:55:38
+69247e70485654a697f05e2f,es,,Pamplona,España,,,Spanish,Navarra,2025-11-24 16:49:04,2026-02-26 12:56:58
+69247e7c7f9fef26201de95c,es,,Ondara,España,Seguro Incluido,,Spanish,Alicante,2025-11-24 16:49:16,2026-02-26 12:57:23
+69247e84485654a697f0ba37,es,,Francheleins,Francia,Seguro Incluido,,French,Ain,2025-11-24 16:49:24,2026-02-26 13:00:53
+69247e84485654a697f0ba8f,es,,Jávea,España,Seguro Incluido,true,Spanish,Alicante,2025-11-24 16:49:24,2026-02-26 13:01:46
+69247e85485654a697f0bb97,es,,Madrid,España,Seguro Incluido,,Spanish,Madrid,2025-11-24 16:49:25,2026-02-26 13:02:24
+69247e7d485654a697f0b129,es,,Pedreguer,España,Seguro Incluido,,Spanish,Alicante,2025-11-24 16:49:17,2026-02-26 13:03:04
+695b904b6a0e53697e393d3b,en,,Jávea,España,,,American,Alicante,2026-01-05 11:19:55,2026-02-26 13:03:37
+69248350485654a697ff1eca,en,,Benidoleig,España,Seguro Incluido,,British,Alicante,2025-11-24 17:09:52,2026-02-26 13:04:20
+69247e63485654a697f01e4d,en,,Denia,España,Seguro Incluido,,British,Alicante,2025-11-24 16:48:51,2026-02-26 13:05:53
+69247e647f9fef26201d893c,en,,Alicante,España,Seguro Incluido,,Polish,Alicante,2025-11-24 16:48:52,2026-02-26 13:06:44
+69247e86485654a697f0bcf7,en,,East Yorkshire,United Kingdom,SIN SEGURO ADICIONAL,,British,Yorkshire,2025-11-24 16:49:26,2026-02-26 13:08:27
+69247e7f7f9fef26201df07c,es,,El Verger,España,Seguro Incluido,,Spanish,Alicante,2025-11-24 16:49:19,2026-02-26 13:09:47
+69247e7a485654a697f0a818,es,,Jávea,España,Seguro Incluido,,Spanish,Alicante,2025-11-24 16:49:14,2026-02-26 13:10:32
+69247e6a485654a697f03963,es,,Denia,España,Seguro Incluido,,Spanish,Alicante,2025-11-24 16:48:58,2026-02-27 09:33:58
+69247e877f9fef26201dfbab,en,,Benitachell,España,SIN SEGURO ADICIONAL,,British,Alicante,2025-11-24 16:49:27,2026-02-26 13:12:01
+69247e63485654a697f01ea5,en,,Gentburgge,Bélgica,SIN SEGURO ADICIONAL,,Belgian,Flandes,2025-11-24 16:48:51,2026-02-26 13:14:00
+69247e757f9fef26201dbb25,es,,Madrid,España,Seguro Incluido,,Spanish,Madrid,2025-11-24 16:49:09,2026-02-26 13:15:08
+69247e67485654a697f02b3c,es,,Ondara,España,SIN SEGURO ADICIONAL,,Belgian,Alicante,2025-11-24 16:48:55,2026-02-26 13:16:13
+69247e647f9fef26201d8994,en,,Marval,United Kingdom,SIN SEGURO ADICIONAL,,British,PA,2025-11-24 16:48:52,2026-02-27 10:56:31
+696285d64ddc842721a416c0,en,,Hannover,Germany,,,German,Lower Saxory,2026-01-10 18:01:10,2026-02-20 12:52:46
+69247e747f9fef26201dba73,en,,Málaga,España,Seguro Incluido,,British,Málaga,2025-11-24 16:49:08,2026-02-26 13:21:55
+69247e6d7f9fef26201d9ce4,es,,Vesenaz,Suiza,Seguro Incluido,,Swiss,Genéve,2025-11-24 16:49:01,2026-02-26 13:23:47
+69247e65485654a697f020b5,es,,Jávea,España,Seguro Incluido,,Italian,Alicante,2025-11-24 16:48:53,2026-02-20 12:58:54
+69247e6f7f9fef26201d9ee4,es,,Son Valenti,España,Seguro Incluido,,Spanish,Palma de Mallorca,2025-11-24 16:49:03,2026-02-26 13:25:51
+693c44a0d77decb71dc6c40b,es,,Jávea,España,,,Spanish,Alicante,2025-12-12 17:36:48,2026-02-26 13:26:36
+69247e74485654a697f061d4,es,,Jávea,España,SIN SEGURO ADICIONAL,,Canadian,Alicante,2025-11-24 16:49:08,2026-02-26 13:27:51
+69247e72485654a697f06073,en,,Denia,España,SIN SEGURO ADICIONAL,,Lithuanian,Alicante,2025-11-24 16:49:06,2026-02-26 13:28:48
+69247e75485654a697f06274,en,,Jávea,España,SIN SEGURO ADICIONAL,,British,Alicante,2025-11-24 16:49:09,2026-02-26 13:32:40
+697344d9cc527213839c2206,en,,Denia,España,,,British,Alicante,2026-01-23 10:52:25,2026-02-26 13:33:58
+69247e6d485654a697f04644,en,,Jávea,España,Seguro Incluido,,Irish,Alicante,2025-11-24 16:49:01,2026-02-26 13:35:25
+696f6ffdc49b7ce816a663dc,en,,Moraira,España,,,Norwegian,Alicante,2026-01-20 13:07:25,2026-02-26 13:36:31
+69247e5e485654a697f01436,es,,Pedreguer,España,,,Spanish,Alicante,2025-11-24 16:48:46,2026-02-26 13:37:53
+69247e877f9fef26201dfc4b,es,,Jávea,España,,, Ukrainian,Alicante,2025-11-24 16:49:27,2026-02-27 09:39:33
+69247e70485654a697f05e87,es,,Denia,España,SIN SEGURO ADICIONAL,,Spanish,Alicante,2025-11-24 16:49:04,2026-02-27 09:40:19
+695ba52d6a0e53697ea8c501,en,,Pedreguer,España,,,British,Alicante,2026-01-05 12:49:01,2026-02-27 09:41:00
+69626076277655d51f3fa5ce,es,,Sanet y Negrals,España,,,Spanish,Alicante,2026-01-10 15:21:42,2026-02-27 09:41:22
+69247e777f9fef26201dbde7,en,,Jávea,España,,,British,Alicante,2025-11-24 16:49:11,2026-02-27 09:41:51
+69247e777f9fef26201dbd8f,en,,Berlin,Germany,Seguro Incluido,,German,Berlín,2025-11-24 16:49:11,2026-02-27 09:43:19
+69247e737f9fef26201db8cb,en,,Berlin,Germany,SIN SEGURO ADICIONAL,,German,Berlín,2025-11-24 16:49:07,2026-02-27 09:43:52
+69247e787f9fef26201dc323,en,,Gata De Gorgos,España,Seguro Incluido,,British,Alicante,2025-11-24 16:49:12,2026-02-27 09:44:15
+69247e727f9fef26201db7c3,es,,Ibiza,España,,,Spanish,Baleares,2025-11-24 16:49:06,2026-02-27 09:45:08
+69247e7d7f9fef26201dea0c,en,,Denia,España,Seguro Incluido,,American,Alicante,2025-11-24 16:49:17,2026-02-26 11:43:57
+69247e81485654a697f0b87e,en,,Denia,España,,,Spanish,Alicante,2025-11-24 16:49:21,2026-02-27 09:46:13
+69247e83485654a697f0b9df,en,,Villajoyosa,España,Seguro Incluido,,British,Alicante,2025-11-24 16:49:23,2026-02-27 09:46:35
+69247e657f9fef26201d8e00,en,,Denia,España,,,Swiss,Alicante,2025-11-24 16:48:53,2026-02-26 11:38:42
+69247e7b485654a697f0ae9f,es,,Valencia,España,SIN SEGURO ADICIONAL,,Dutch,Valencia,2025-11-24 16:49:15,2026-02-27 09:51:05
+69247e64485654a697f01f55,en,,Gata de Gorgos,España,Seguro Incluido,,British,Alicante,2025-11-24 16:48:52,2026-02-27 09:51:27
+69247e7a7f9fef26201de6c6,en,,Jávea,España,Seguro Incluido,,Dutch,Alicante,2025-11-24 16:49:14,2026-02-27 09:52:07
+69247e6a7f9fef26201d9aa0,en,,Nottingham,United Kingdom,,,British,Nottinghamshire,2025-11-24 16:48:58,2026-02-27 09:53:16
+69247e7c485654a697f0b089,en,,Denia,España,Seguro Incluido,,British,Alicante,2025-11-24 16:49:16,2026-02-27 09:53:48
+693fed1c9e14530af61c126c,en,,Jávea,España,,,Dutch,Alicante,2025-12-15 12:12:28,2026-02-23 10:52:15
+69248350485654a697ff1f22,en,,Jávea,Spain,Seguro En Bienes Hasta 10.000€,,Dutch,Alicante,2025-11-24 17:09:52,2026-02-27 09:54:29
+69247e6a485654a697f039bb,es,,Valencia,España,,,Spanish,Valencia,2025-11-24 16:48:58,2026-02-27 09:55:33
+69247e5f7f9fef26201d82d3,en,,Cambridge,United Kingdom,Seguro Incluido,,British,Cambridgeshire,2025-11-24 16:48:47,2026-02-27 09:56:18
+69247e607f9fef26201d8578,en,,Jávea,España,Seguro Incluido,,British,Alicante,2025-11-24 16:48:48,2026-02-27 09:56:44
+69247e79485654a697f08434,en,,Denia,España,,,British,Alicante,2025-11-24 16:49:13,2026-02-27 09:57:03
+69247e7c7f9fef26201de8ac,en,,Sagra,España,Seguro Incluido,,Irish,Alicante,2025-11-24 16:49:16,2026-02-27 09:58:05
+69247e747f9fef26201db96b,es,,Madrid,España,,,Spanish,Madrid,2025-11-24 16:49:08,2026-02-27 09:58:24
+694120ab1f8ba958b993680d,en,,The Hague,Holanda,,,Dutch,Holanda Meridional,2025-12-16 10:04:43,2026-02-27 10:00:56
+69247e6d485654a697f04560,es,,Villanueva de La Cañada,España,,,Spanish,Madrid,2025-11-24 16:49:01,2026-02-27 10:01:13
+69247e6c7f9fef26201d9c48,en,,Pedreguer,España,Seguro Incluido,,Swiss,Alicante,2025-11-24 16:49:00,2026-02-27 10:01:34
+69247e6b7f9fef26201d9b50,en,,Kortrijk,Bélgica,Seguro Incluido,,Belgian,West Vlaanderen,2025-11-24 16:48:59,2026-02-27 10:02:43
+69247e617f9fef26201d8680,es,,Denia,España,Seguro Incluido,,Spanish,Alicante,2025-11-24 16:48:49,2026-02-27 10:03:09
+69247e847f9fef26201dfaa3,en,,Maarn,Holanda,SIN SEGURO ADICIONAL,,Dutch,Utrech,2025-11-24 16:49:24,2026-02-27 10:04:02
+69247e7f7f9fef26201def07,en,,Reading,United Kingdom,Seguro Incluido,,British,London,2025-11-24 16:49:19,2026-02-27 10:05:01
+69247e86485654a697f0bd4f,en,,Oliva,España,,,British,Valencia,2025-11-24 16:49:26,2026-02-27 10:05:44
+69247e5f485654a697f01665,en,,Hilsea Portsmouth,United Kingdom,Seguro Incluido,,British,Hampshire,2025-11-24 16:48:47,2026-02-27 10:06:30
+69247e617f9fef26201d8628,en,,Kingston upon Thames,United Kingdom,Seguro Incluido,,British,London,2025-11-24 16:48:49,2026-02-27 13:00:42
+69247e5f485654a697f01580,en,,Ondara,España,Seguro Incluido,,British,Alicante,2025-11-24 16:48:47,2026-02-27 10:07:43
+69247e6c485654a697f03cb1,en,,Ràfol d'Almunia,España,Seguro Incluido,,Dutch,Alicante,2025-11-24 16:49:00,2026-02-27 10:09:01
+69247e7f485654a697f0b6e6,en,,Jávea,España,Seguro Incluido,,British,Alicante,2025-11-24 16:49:19,2026-02-26 10:21:32
+69247e767f9fef26201dbb7d,en,,Turriff,United Kingdrom,Seguro Incluido,,Scottish,Aberdeenshire,2025-11-24 16:49:10,2026-02-26 13:01:20
+69247e7e485654a697f0b636,en,,Marbella,España,SIN SEGURO ADICIONAL,,Spanish,Málaga,2025-11-24 16:49:18,2026-02-27 10:10:56
+69247e88485654a697f0bf07,en,,Denia,España,SIN SEGURO ADICIONAL,,Ukrainian,Alicante,2025-11-24 16:49:28,2026-02-27 10:11:34
+69247e817f9fef26201df2e4,en,,Benidoleig,España,Seguro Incluido,,Spanish,Alicante,2025-11-24 16:49:21,2026-02-27 10:12:18
+69247e677f9fef26201d9058,en,,Torrent,Spain,SIN SEGURO ADICIONAL,,Ukrainian,Valencia,2025-11-24 16:48:55,2026-02-27 10:13:09
+69247e6a485654a697f03a6a,en,,Pego,España,Seguro Incluido,,German,Alicante,2025-11-24 16:48:58,2026-02-27 10:14:37
+69247e727f9fef26201db81b,en,,Alfás del Pi,España,Seguro Incluido,,Dutch,Alicante,2025-11-24 16:49:06,2026-02-27 10:15:22
+69247e667f9fef26201d8f50,en,,Orba,España,Seguro Incluido,,British,Alicante,2025-11-24 16:48:54,2026-02-27 10:20:25

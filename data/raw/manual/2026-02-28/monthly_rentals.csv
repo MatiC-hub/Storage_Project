@@ -1,0 +1,13 @@
+external_rental_id;external_unit_id;external_owner_id;rental_state;price_eur;deposit_eur;move_in_date;move_out_date;billed_until;created_at;updated_at;billing_type
+MONTHLY_RENT_001;69089c5d6cf086dbba656a17;MONTHLY_CUST_001;occupied;116.50;50.00;2015-03-26;;;;;monthly
+MONTHLY_RENT_002;6911ecc73a7be8a57c2bc4ba;MONTHLY_CUST_001;occupied;76.00;50.00;2015-03-26;;;;;monthly
+MONTHLY_RENT_003;69089c5d6cf086dbba656aa5;MONTHLY_CUST_002;occupied;272.99;50.00;2017-03-28;;;;;monthly
+MONTHLY_RENT_004;690b246e3916b12eeda154e3;MONTHLY_CUST_003;occupied;38.18;0;2022-08-16;;;;;monthly
+MONTHLY_RENT_005;690b246f3916b12eeda15aa0;MONTHLY_CUST_004;occupied;97.50;0;2024-07-08;;;;;monthly
+MONTHLY_RENT_006;690b2471288cf12e2c557459;MONTHLY_CUST_005;occupied;150.25;0;2021-06-08;;;;;monthly
+MONTHLY_RENT_007;6909d7f126c223f960efa221;MONTHLY_CUST_006;occupied;225.00;50.00;2023-12-15;;;;;monthly
+MONTHLY_RENT_008;6909d7f126c223f960efa2b4;MONTHLY_CUST_007;occupied;128.96;50.00;2014-04-09;;;;;monthly
+MONTHLY_RENT_009;690dd8eadd78b46b0832a5ff;MONTHLY_CUST_008;occupied;63.50;50.00;2018-11-19;;;;;monthly
+MONTHLY_RENT_010;6911ecc33a7be8a57c2bbbfa;MONTHLY_CUST_009;occupied;85.50;50.00;2016-07-09;;;;;monthly
+MONTHLY_RENT_011;6911ecc4e359c140bea6f786;MONTHLY_CUST_010;occupied;84.50;50.00;2017-06-01;;;;;monthly
+MONTHLY_RENT_012;6911ed15e359c140bea7d716;MONTHLY_CUST_011;occupied;76.00;50.00;2024-01-04;;;;;monthly

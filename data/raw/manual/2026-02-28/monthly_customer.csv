@@ -1,0 +1,12 @@
+﻿external_owner_id;nationality;language;city;province;country;is_business_account;
+MONTHLY_CUST_001;Spanish;es;Madrid;Madrid;Spain;0;
+MONTHLY_CUST_002;British;en;;;United Kingdom;0;
+MONTHLY_CUST_003;German;en;;;Germany;1;
+MONTHLY_CUST_004;British;en;Ewell;Stoneleigh;United Kingdom;0;
+MONTHLY_CUST_005;British;en;Nongrue;Banglamung;Thailand;0;
+MONTHLY_CUST_006;British;en;Ràfol d'Almunia;Alicante;Spain;0;
+MONTHLY_CUST_007;Bulgarian;en;Jávea;Alicante;Spain;0;
+MONTHLY_CUST_008;Russian;en;Jávea;Alicante;Spain;0;
+MONTHLY_CUST_009;Spanish;es;Parla;Madrid;Spain;0;
+MONTHLY_CUST_010;Swiss;en;Unterägeri;Zug;Switzerland;0;
+MONTHLY_CUST_011;Spanish;es;Oliva;Valencia;Spain;0;

@@ -1,355 +1,377 @@
-# 🗄️ Proyecto Personal – Sistema Analítico para Gestión de Trasteros
+# 🗄️ Plataforma de Datos – Self-Storage
+
+![Python](https://img.shields.io/badge/Python-Pipeline%20de%20Datos-blue)
+![MySQL](https://img.shields.io/badge/MySQL-Base%20de%20Datos-orange)
+![Tableau](https://img.shields.io/badge/Tableau-Dashboard-purple)
+![ETL](https://img.shields.io/badge/ETL-Pipeline-green)
+![Data Analytics](https://img.shields.io/badge/Data-Analytics-lightgrey)
+![Estado](https://img.shields.io/badge/Proyecto-Completado-success)
+
+Proyecto de **analítica de datos end-to-end** construido a partir de datos reales de una instalación de **self-storage**, transformando datos operativos en un sistema analítico para la toma de decisiones.
+
+El proyecto incluye:
+
+- Ingesta de datos operativos en bruto  
+- Pipeline ETL en Python  
+- Diseño de base de datos relacional en MySQL  
+- Validación de calidad de datos  
+- Capa analítica en SQL  
+- Dashboards interactivos en Tableau  
+
+El objetivo es convertir los datos operativos en **insights accionables** sobre:
+
+- Ocupación y utilización de unidades  
+- Comportamiento del cliente y duración de alquiler  
+- Distribución geográfica de la demanda  
+- Segmentación de clientes  
 
 ---
 
-## 🎯 Objetivo del Proyecto
+# 🎯 Objetivo del Proyecto
 
-Este proyecto tiene un doble objetivo:
+Este proyecto tiene dos objetivos complementarios.
 
-### 1️⃣ Académico (Bootcamp & Portfolio)
+## Propósito Académico
 
-Proyecto final de un bootcamp de Data Analytics cuyo objetivo es:
+Proyecto final de un **bootcamp de Data Analytics**, enfocado en diseñar un sistema analítico completo a partir de datos operativos en bruto.
 
-- Diseñar un modelo relacional completo desde cero.
-- Implementar un pipeline ETL reproducible en Python.
-- Aplicar buenas prácticas de modelado, integridad y gobernanza de datos.
-- Construir un proyecto end-to-end profesional para portfolio.
+Objetivos de aprendizaje principales:
 
-### 2️⃣ Profesional (Caso Real)
-
-Proyecto desarrollado en colaboración con "Securistore Self-Storage", empresa real del sector de alquiler de trasteros.
-
-Se ha diseñado una base de datos clara, mantenible y escalable que permite responder preguntas como:
-
-- Distribución geográfica de clientes.
-- Duración mínima, media y máxima de estancia.
-- Ocupación actual y evolución temporal.
-- Tiempo medio de vacancia por unidad.
-- Segmentación entre clientes activos y finalizados.
-
-⚠️ **Nota de privacidad:**  
-Los datos publicados en este repositorio son sintéticos.  
-Los datos reales se procesan únicamente en entorno local privado.
+- Modelado relacional de bases de datos  
+- Construcción de un pipeline ETL reproducible en Python  
+- Implementación de validaciones de calidad de datos  
+- Aplicación de buenas prácticas de gobernanza de datos y documentación  
+- Desarrollo de un proyecto end-to-end para portfolio profesional  
 
 ---
 
-# 🏗 Arquitectura del Proyecto
+## Caso de Negocio Real
 
-El proyecto sigue una arquitectura **ETL batch basada en snapshots diarios**, priorizando:
+El proyecto se desarrolló utilizando datos operativos de una instalación de **self-storage ubicada en Ondara (Alicante, España)**.
 
-- Trazabilidad
-- Reproducibilidad
-- Consistencia entre tablas
-- Auditoría histórica
+El objetivo es transformar los datos operativos en información útil para la toma de decisiones en áreas como:
+
+- Ocupación y utilización de la instalación  
+- Comportamiento y fidelización de clientes  
+- Distribución geográfica de la demanda  
+- Análisis de duración de alquiler  
+- Rotación y vacancia de unidades  
+
+⚠️ **Nota de privacidad**
+
+Los datos publicados en este repositorio son **sintéticos y anonimizados**.  
+Los datos operativos reales se procesan únicamente en un entorno local privado.
 
 ---
 
-## 🔄 Flujo General
+# 🏗 Arquitectura de Datos
 
-### 1️⃣ Extract
-- Exportación de CSV desde el sistema operativo.
-- Organización por fecha en:
+El proyecto sigue una **arquitectura ETL por lotes basada en snapshots fechados** del sistema operativo.
 
-  data/raw/YYYY-MM-DD/
+Exportaciones CSV
+↓
+Pipeline ETL en Python
+↓
+Base de Datos Relacional MySQL
+↓
+Capa Analítica SQL
+↓
+Dashboards en Tableau
+
+
+Principios de diseño:
+
+- Reproducibilidad  
+- Trazabilidad  
+- Integridad referencial  
+- Auditoría histórica de snapshots  
+
 ---
 
-### 2️⃣ Transform
-Scripts independientes por entidad:
+# 🔄 Pipeline ETL
 
-- `etl_units.py`
-- `etl_customers.py`
-- `etl_rentals.py`
+El proceso ETL está implementado en Python y diseñado para ser **totalmente reproducible e idempotente**.
 
-Incluye:
+Cada ejecución procesa un snapshot fechado del sistema operativo.
 
-- Limpieza de datos
+---
+
+## Extract (Extracción)
+
+Los datos se exportan del sistema operativo en archivos CSV y se almacenan por fecha:
+
+data/raw/YYY-MM-DD/
+
+
+---
+
+## Transform (Transformación)
+
+La limpieza y transformación de datos se realiza con **pandas**.
+
+Operaciones principales:
+
+- Limpieza de datos y conversión de tipos
+- Eliminación de duplicados
+- Normalización geográfica
 - Normalización de estados
-- Estandarización geográfica
-- Validación estructural
-- Detección de inconsistencias
-- Generación de reportes auxiliares
+- Validación de integridad referencial
+- Validación estructural de datos
+
+Las inconsistencias detectadas se exportan como reportes.
+
+Ejemplos:
+
+pending_country_revies.csv
+unit_state_mismatches.csv
+
 
 ---
 
-### 3️⃣ Load
-- Inserción / actualización mediante `INSERT ... ON DUPLICATE KEY UPDATE`
-- Integridad referencial validada post-carga
-- Claves externas basadas en `external_*_id`
+## Load (Carga)
+
+Los datos limpios se cargan en MySQL mediante operaciones **UPSERT**:
+
+INSERT ... ON DUPLICATE KEY UPDATE
+
+
+Después de la carga se ejecutan consultas de validación para verificar:
+
+- Integridad referencial  
+- Consistencia entre tablas  
+- Completitud de los datos  
 
 ---
 
-### 4️⃣ Capa Analítica
-- Base de datos MySQL consolidada
-- Consultas SQL de verificación
-- Preparado para herramientas BI (Tableau / Power BI)
+# 📂 Estructura del Repositorio
 
----
-
-# 📂 Estructura Real del Repositorio
+El repositorio está organizado siguiendo un flujo típico de **ingeniería y analítica de datos**.
 
 00_STORAGE_PROJECT/
 │
 ├── data/
-│ ├── raw/
-│ │ ├── 2026-01-27/
-│ │ │ ├── rentals.csv
-│ │ │ ├── types.csv
-│ │ │ └── units.csv
-│ │ │
-│ │ ├── 2026-02-25/
-│ │ │ ├── owners_customers.csv
-│ │ │ └── rentals.csv
-│ │ │
-│ │ └── 2026-02-28/
-│ │ ├── owners_customers.csv
-│ │ ├── rentals.csv
-│ │ └── units.csv
-│ │
-│ ├── processed/
-│ │ ├── 2026-01-27/
-│ │ │ └── units_clean.csv
-│ │ │
-│ │ ├── 2026-02-25/
-│ │ │ ├── customers_clean.csv
-│ │ │ ├── rentals_clean.csv
-│ │ │ └── pending_country_review.csv
-│ │ │
-│ │ └── 2026-02-28/
-│ │ ├── customers_clean.csv
-│ │ ├── rentals_clean.csv
-│ │ ├── units_clean.csv
-│ │ ├── pending_country_review.csv
-│ │ └── unit_state_mismatches.csv
-│ │
-│ ├── manual/
-│ │ ├── 2026-02-25/
-│ │ │ ├── monthly_customer.csv
-│ │ │ └── monthly_rentals.csv
-│ │ └── 2026-02-28/
-│ │ ├── monthly_customer.csv
-│ │ └── monthly_rentals.csv
-│ │
-│ └── reference/
-│ ├── city_aliases.csv
-│ ├── countries.csv
-│ └── spanish_provinces.csv
+│ ├── raw/ # Snapshots originales del sistema operativo
+│ ├── processed/ # Datos limpios generados por el ETL
+│ ├── manual/ # Informes exportados manualmente
+│ └── reference/ # Datos de referencia (países, provincias, alias)
 │
-├── images/
+├── docs/
+│ ├── Analisis-Operativo-y-de-Clientes-Self-Storage.pdf
+│ ├── current_snapshot.md
 │ └── data_model.png
 │
 ├── sql/
 │ ├── Diagram.mwb
-│ ├── 2026-02-28 Queries.sql
-│ ├── Checks_01_03_2026.sql
+│ ├── Analytics_rentals_for_Tableau.sql
 │ ├── Data_Quality_Checklist_Snapshot_2026-02-28.sql
+│ ├── Checks_01_03_2026.sql
 │ ├── Monthly_check.sql
 │ ├── Unit_rentals_checks.sql
-│ └── Revisiones.sql
+│ └── Reviews.sql
 │
 ├── src/
 │ ├── etl_units.py
 │ ├── etl_customers.py
 │ └── etl_rentals.py
 │
-├── notebooks/
+├── tableau/
+│ ├── securistore_final_presentation.twbx
+│ └── securistore_workbook.twbx
+│
 ├── .env
 ├── .gitignore
-├── README_ES.md
-└── README_EN.md
+├── README_EN.md
+└── README_ES.md
 
 
 ---
 
 # 🗄 Modelo de Datos
 
-Base de datos: `storage_project`
+Base de datos: **storage_project**
 
-### Tablas principales implementadas
+Tablas principales implementadas:
 
 - `customers`
 - `units`
 - `unit_rentals`
 
----
+El modelo prioriza:
 
-### Diagrama Entidad-Relación
-
-![Modelo de Datos](images/data_model.png)
-
-Modelo EER diseñado en MySQL Workbench  
-Archivo fuente disponible en: `sql/Diagram.mwb`
+- Normalización
+- Relaciones claras mediante claves foráneas
+- Integridad referencial estricta
 
 ---
 
-## 🧠 Decisiones de Diseño
+## Diagrama Entidad-Relación
 
-En una fase inicial se consideró la creación de tablas agregadas:
+![Data Model](docs/data_model.png)
+
+El esquema de la base de datos fue diseñado en **MySQL Workbench**.
+
+Archivo fuente disponible en:
+
+sql/Diagram.mwb
+
+
+---
+
+# 🧠 Decisiones Arquitectónicas
+
+Durante el modelado inicial se consideraron tablas adicionales de agregación:
 
 - `bulk_areas`
 - `bulk_occupancies`
 
-Tras analizar la estructura real del sistema operativo, se determinó que:
+Tras analizar la estructura del sistema operativo se determinó que toda la información necesaria ya estaba representada en:
 
-- Toda la información necesaria ya estaba representada en:
-  - `units`
-  - `unit_rentals`
+- `units`
+- `unit_rentals`
 
-Se descartaron para evitar:
+Estas tablas fueron descartadas para evitar:
 
 - Redundancia
 - Complejidad innecesaria
 - Riesgo de inconsistencias
 
-El modelo final prioriza:
-
-- Normalización
-- Relaciones claras
-- Integridad referencial estricta
+El modelo final prioriza **claridad, normalización y consistencia**.
 
 ---
 
-# 🔄 Proceso ETL
+# 🛡 Consideraciones de Calidad de Datos
 
-Pipeline idempotente y re-ejecutable.
-
-### Extract
-- Lectura de snapshots fechados.
-
-### Transform
-- Limpieza y tipado
-- Eliminación de duplicados
-- Normalización geográfica
-- Inferencia automática de país cuando provincia española
-- Export de inconsistencias:
-  - `pending_country_review.csv`
-  - `unit_state_mismatches.csv`
-
-### Load
-- UPSERT en MySQL
-- Verificaciones SQL posteriores
+Durante el desarrollo se identificaron varias situaciones relacionadas con la calidad de datos.
 
 ---
 
-# 🛡 Calidad de Datos y Limitaciones Conocidas
+## Orden de ejecución del snapshot
 
-## 1️⃣ Consistencia por Snapshots
-
-El pipeline debe ejecutarse en orden:
+El ETL debe ejecutarse en el siguiente orden:
 
 1. `etl_units.py`
 2. `etl_customers.py`
 3. `etl_rentals.py`
 
-Ejecuciones parciales pueden generar inconsistencias temporales.
+Una ejecución parcial puede generar inconsistencias temporales entre tablas.
 
 ---
 
-## 2️⃣ Clientes Mensuales
+## Clientes Mensuales
 
 En el sistema operativo:
 
-- Las unidades mensuales aparecen como `blocked`.
+Las unidades mensuales aparecen como **blocked**.
 
-En el modelo analítico:
+En el modelo analítico se consideran:
 
-- Se consideran `occupied`.
+**unidades ocupadas**.
 
-Snapshot `2026-02-28`:
+Snapshot `2026-02-28` incluye:
+
 - 12 unidades mensuales
-- 1 unidad bloqueada de prueba
+- 1 unidad bloqueada utilizada para pruebas
 
 ---
 
-## 3️⃣ Desajustes unit_state vs rental_state (4 casos)
+## Inconsistencias entre estado de unidad y alquiler
 
-Unidades marcadas como `available` cuyo último rental figura como `occupied`.
+Algunas unidades aparecen como **available** mientras que el último alquiler sigue marcado como **occupied**.
 
 Documentado en:
+
 data/processed/2026-02-28/unit_state_mismatches.csv
 
 
-No se aplican correcciones artificiales.
+No se aplicaron correcciones artificiales para preservar la integridad del sistema origen.
 
 ---
 
-## 4️⃣ Datos de Localización Faltantes
+## Falta de información geográfica
 
-2 clientes activos sin `city` ni `province`.
+Dos clientes activos no tienen información de ubicación (`city`, `province`).
 
-- Información no proporcionada
-- Valores preservados como `NULL`
-
----
-
-# 🧹 Gobernanza de Datos
-
-- Eliminación completa de PII
-- Snapshots versionados
-- Integridad referencial validada
-- Documentación de anomalías
-- Modelo reproducible
+Los valores se mantienen como **NULL** porque los datos no fueron proporcionados por los clientes.
 
 ---
 
-# 📊 Próxima Fase: Análisis y Visualización
+# 📊 Capa Analítica
 
-El modelo está preparado para:
-
-- Análisis de ocupación
-- Tiempo medio sin ocupar
-- Segmentación geográfica
-- Evolución temporal
-- Comportamiento de clientes recurrentes
-
-## Capa Analítica (Vista SQL para BI)
-
-Además del pipeline ETL en Python, se creó una vista analítica en MySQL (`analytics_rentals`).
+Se creó una vista SQL analítica llamada **analytics_rentals** para facilitar el consumo desde herramientas de BI.
 
 Esta vista:
-- Enriquece los datos de alquiler con información de unidades y clientes
-- Calcula dinámicamente la duración del alquiler
+
+- Enriquecer los datos de alquiler con información de unidad y cliente
+- Calcula la duración del alquiler dinámicamente
 - Identifica alquileres activos
 - Detecta clientes con múltiples unidades
-- Calcula los m² totales ocupados por cliente
+- Calcula los metros cuadrados ocupados por cliente
 
-Esta vista funciona como capa semántica para Tableau, permitiendo conexión directa a la base de datos en lugar de trabajar únicamente con CSV.
+Esta vista actúa como **capa semántica para Tableau**.
 
-La arquitectura separa:
-- Datos raw
-- Datos procesados
-- Capa analítica
-- Capa de visualización
+---
 
-Refleja un flujo de trabajo orientado a entorno profesional.
+# 📈 Dashboards en Tableau
 
-Próximo paso:
+La capa analítica se visualiza mediante dashboards interactivos desarrollados en **Tableau**.
 
-- Construcción de dashboards en Tableau / Power BI
-- Integración de identidad visual corporativa
+Principales análisis:
+
+- Visión operativa de ocupación
+- Distribución de duración de alquiler
+- Distribución geográfica de clientes
+- Segmentación por nacionalidad
+
+Los workbooks se encuentran en:
+
+tableau/ 
+
+https://public.tableau.com/views/securistore_operational_dashboard/Cover?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
 
 ---
 
 # 🛠 Stack Tecnológico
 
-- MySQL
-- Python
-- pandas
-- SQLAlchemy
-- python-dotenv
-- Tableau (fase analítica)
-- Power BI (opcional)
+- Python  
+- pandas  
+- SQLAlchemy  
+- python-dotenv  
+- MySQL  
+- Tableau  
+
+Compatibilidad opcional con:
+
+- Power BI
 
 ---
 
-# 🚀 Estado Actual
+# 🚀 Estado del Proyecto
 
 ✔ Modelo relacional implementado  
-✔ ETL operativo  
-✔ Snapshots automatizados  
-✔ Calidad de datos validada  
-✔ Integridad referencial comprobada  
-✔ Listo para fase analítica  
+✔ Pipeline ETL operativo  
+✔ Arquitectura basada en snapshots  
+✔ Validación de calidad de datos  
+✔ Integridad referencial verificada  
+✔ Capa analítica SQL implementada  
+✔ Dashboards en Tableau desarrollados  
 
+---
 
-Phase 1: Operational & occupancy analysis
-Phase 2: Financial and revenue optimization analysis
+# 📌 Próximos Pasos
+
+Posibles extensiones del proyecto:
+
+- Análisis de optimización de precios y revenue  
+- Predicción de tendencias de ocupación  
+- Análisis de valor de vida del cliente (CLV)  
+- Automatización del ETL  
+- Integración en un data warehouse  
+
+---
+
+# 👤 Autor
+
+**Matilde Cano Llinares**
+
+Proyecto de Portfolio – Data Analytics  
+Análisis Operativo y de Clientes en Self-Storage

@@ -1,31 +1,59 @@
-# 🗄️ Personal Project – Storage Facility Analytical System
+# 🗄️ Storage Facility Analytical System
+
+![Python](https://img.shields.io/badge/Python-Data%20Pipeline-blue)
+![MySQL](https://img.shields.io/badge/MySQL-Database-orange)
+![Tableau](https://img.shields.io/badge/Tableau-Dashboard-purple)
+![ETL](https://img.shields.io/badge/ETL-Pipeline-green)
+![Data Analytics](https://img.shields.io/badge/Data-Analytics-lightgrey)
+
+---
+
+# Self-Storage Facility Data Platform
+
+End-to-end data analytics project for a real self-storage facility.
+
+The project builds a complete analytical system including:
+
+• data/ Raw operational data ingestion  
+• src/ Python ETL pipeline  
+• sql/ Database model and validation queries   
+• tableau/ BI dashboards  
+• docs/ Project documentation and reports  
+
+The goal is to transform operational data into actionable insights about:
+
+• Occupancy and unit utilization  
+• Customer behaviour and rental duration  
+• Geographic distribution of demand  
+• Customer segmentation
 
 ---
 
 ## 🎯 Project Objective
 
-This project has a dual purpose:
+This project has two complementary goals:
 
-### 1️⃣ Academic (Bootcamp & Portfolio)
+### Academic Purpose
 
-Final project of a Data Analytics bootcamp aimed at:
+Final project of a Data Analytics bootcamp focused on designing a complete analytical system from raw operational data.
 
-- Designing a complete relational model from scratch.
-- Implementing a reproducible ETL pipeline in Python.
-- Applying best practices in data modeling, integrity, and governance.
-- Building a professional end-to-end portfolio project.
+Key learning objectives include:
 
-### 2️⃣ Professional (Real Business Case)
+• Relational database modeling  
+• Building a reproducible ETL pipeline in Python  
+• Implementing data quality validation  
+• Applying best practices in data governance and documentation  
 
-Project developed in collaboration with, "Securistore Self-Storage", a real storage rental company.
+### Business Case
 
-A clean, maintainable, and scalable database was designed to answer questions such as:
+The project was developed using real operational data from a self-storage facility.
 
-- Geographic distribution of customers.
-- Minimum, average, and maximum rental duration.
-- Current occupancy and temporal evolution.
-- Average vacancy time per unit.
-- Segmentation of active vs. completed customers.
+The objective is to transform operational data into insights that support decision-making in areas such as:
+
+• Facility occupancy and utilization  
+• Customer behaviour and retention  
+• Geographic demand distribution  
+• Unit turnover and vacancy analysis
 
 ⚠️ **Privacy Note:**  
 The data published in this repository is synthetic.  
@@ -33,14 +61,11 @@ Real operational data is processed only in a private local environment.
 
 ---
 
-# 🏗 Project Architecture
+## 🏗 Data Architecture
 
-The project follows a **batch-based ETL architecture using daily snapshots**, prioritizing:
+The system follows a batch ETL architecture based on dated operational snapshots.
 
-- Traceability  
-- Reproducibility  
-- Cross-table consistency  
-- Historical auditability  
+Raw Data → Python ETL → MySQL Database → Analytical SQL Layer → Tableau Dashboards
 
 ---
 
@@ -86,44 +111,28 @@ Includes:
 
 ---
 
-# 📂 Repository Structure
+## 📂 Repository Structure
 
+The repository is organized following a typical data engineering workflow:
 
+data/
+Raw and processed snapshots used by the ETL pipeline.
+
+src/
+Python ETL scripts for units, customers and rentals.
+
+sql/
+Database model, validation queries and analytical views.
+
+tableau/
+Tableau workbooks used for the analytical dashboards.
+
+images/
+Project diagrams and visual assets.
+
+reports/
+Analytical documentation and project reports.
 ---
-
-### 2️⃣ Transform
-Independent scripts per entity:
-
-- `etl_units.py`
-- `etl_customers.py`
-- `etl_rentals.py`
-
-Includes:
-
-- Data cleaning
-- State normalization
-- Geographic standardization
-- Structural validation
-- Referential integrity checks
-- Inconsistency reporting
-
----
-
-### 3️⃣ Load
-- Insert / Upsert using `INSERT ... ON DUPLICATE KEY UPDATE`
-- Referential integrity validation after load
-- Foreign keys based on `external_*_id`
-
----
-
-### 4️⃣ Analytical Layer
-- Consolidated MySQL relational database
-- SQL validation queries
-- Prepared for BI tools (Tableau / Power BI)
-
----
-
-# 📂 Repository Structure
 
 00_STORAGE_PROJECT/
 │
@@ -232,11 +241,7 @@ After analyzing the operational system structure, it was determined that:
   - `units`
   - `unit_rentals`
 
-These tables were discarded to avoid:
-
-- Redundancy
-- Unnecessary complexity
-- Risk of inconsistencies
+These tables were intentionally discarded to avoid unnecessary redundancy and keep the model fully normalized.
 
 The final model prioritizes:
 
@@ -248,7 +253,17 @@ The final model prioritizes:
 
 # 🔄 ETL Process
 
-The ETL pipeline is idempotent and fully re-executable.
+## ETL Pipeline Overview
+
+The ETL pipeline is fully reproducible and idempotent.
+
+Each execution processes a dated snapshot and performs:
+
+1. Data extraction from raw CSV exports
+2. Data cleaning and normalization
+3. Data validation and anomaly detection
+4. Loading into a relational MySQL database
+5. Post-load integrity checks
 
 ### Extract
 - Reads dated snapshot exports.
@@ -268,7 +283,7 @@ The ETL pipeline is idempotent and fully re-executable.
 
 ---
 
-# 🛡 Data Quality & Known Limitations
+# 🛡 Data Quality Considerations
 
 ## 1️⃣ Snapshot Consistency
 
@@ -391,3 +406,20 @@ Next step:
 
 Phase 1: Operational & occupancy analysis
 Phase 2: Financial and revenue optimization analysis
+
+---
+
+## Tableau Dashboard
+
+The analytical layer is visualized through interactive dashboards built in Tableau.
+
+Main analyses include:
+
+• Operational occupancy overview  
+• Rental duration distribution  
+• Customer geographic distribution  
+• Customer nationality segmentation  
+
+Tableau Public Dashboard:
+
+[https://public.tableau.com/views/securistore_operational_dashboard/Cover?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link]

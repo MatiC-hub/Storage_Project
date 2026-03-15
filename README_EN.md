@@ -98,107 +98,7 @@ Each execution processes a dated snapshot of the operational system.
 
 Raw data is exported from the operational system as CSV files and stored by date:
 
-
-Key design principles:
-
-- Reproducibility  
-- Traceability  
-- Referential integrity  
-- Historical snapshot auditing  
-
----
-
-# 🔄 ETL Pipeline
-
-The ETL process is implemented in Python and designed to be **fully reproducible and idempotent**.
-
-Each execution processes a dated snapshot of the operational system.
-
-## Extract
-
-Raw data is exported from the operational system as CSV files and stored by date:
-
-
-Key design principles:
-
-- Reproducibility  
-- Traceability  
-- Referential integrity  
-- Historical snapshot auditing  
-
----
-
-# 🔄 ETL Pipeline
-
-The ETL process is implemented in Python and designed to be **fully reproducible and idempotent**.
-
-Each execution processes a dated snapshot of the operational system.
-
-## Extract
-
-Raw data is exported from the operational system as CSV files and stored by date:
-
-
-Key design principles:
-
-- Reproducibility  
-- Traceability  
-- Referential integrity  
-- Historical snapshot auditing  
-
----
-
-# 🔄 ETL Pipeline
-
-The ETL process is implemented in Python and designed to be **fully reproducible and idempotent**.
-
-Each execution processes a dated snapshot of the operational system.
-
-## Extract
-
-Raw data is exported from the operational system as CSV files and stored by date:
-
 data/raw/YYYY-MM-DD/
-
-
----
-
-## Transform
-
-Cleaning and transformation is performed using **pandas**.
-
-Main operations include:
-
-- Data cleaning and type casting
-- Duplicate removal
-- Geographic normalization
-- State normalization
-- Referential integrity validation
-- Structural validation
-
-Inconsistencies detected during the transformation stage are exported as reports.
-
-Examples:
-
-
----
-
-## Transform
-
-Cleaning and transformation is performed using **pandas**.
-
-Main operations include:
-
-- Data cleaning and type casting
-- Duplicate removal
-- Geographic normalization
-- State normalization
-- Referential integrity validation
-- Structural validation
-
-Inconsistencies detected during the transformation stage are exported as reports.
-
-Examples:
 
 ---
 
@@ -221,13 +121,6 @@ Examples:
 
 pending_country_review.csv
 unit_state_mismatches.csv
-
-
----
-
-## Load
-
-Cleaned data is loaded into MySQL using **UPSERT operations**:
 
 
 ---
@@ -286,36 +179,6 @@ The repository is organized following a typical **data engineering and analytics
 ├── .gitignore
 ├── README_EN.md
 └── README_ES.md
-
-
----
-
-# 🗄 Data Model
-
-Database: **storage_project**
-
-Core tables:
-
-- `customers`
-- `units`
-- `unit_rentals`
-
-The model prioritizes:
-
-- Normalization
-- Clear foreign key relationships
-- Strict referential integrity
-
----
-
-## Entity Relationship Diagram
-
-![Data Model](docs/data_model.png)
-
-The database schema was designed using **MySQL Workbench**.
-
-Source file available in:
-
 
 ---
 
